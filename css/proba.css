@@ -1,0 +1,243 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Readex Pro', sans-serif;
+}
+.cleaner{
+	clear:both;
+}
+a{
+	text-decoration:none;
+}
+.bold{
+	font-weight: bold;
+}
+.active_page{
+	color: #ffa500;
+}
+.wrapper{
+	width:75%;
+	margin: 0 auto;
+}
+#top-header{
+	background-color: #1dadc0;
+}
+#heading{
+	float:left;
+	padding: 14px;
+}
+#heading h1{
+	color: #fff;
+	font-size: 50px;
+}
+#heading h1 a{
+	color: #fff;
+}
+#media{
+	float: right;
+	text-align:right;
+}
+#media ul{
+	padding-top: 31px;
+}
+#media ul li{
+	display: inline-block;
+	margin-left: 15px;
+}
+#media ul li a:hover{
+	color: #ffa500;
+}
+#media a{
+	font-size: 24px;
+	color: #fff;
+}
+header{
+	padding: 9px;
+	background-color: #fff;
+}
+header nav{
+	float: left;
+	text-align: center;
+}
+header nav ul{
+	list-style: none;
+}
+header nav ul li{
+    display: inline;
+    margin-left: 16px;
+	
+}
+header nav a{
+    font-size: 20px;
+	color: #000;
+}
+#cover, #covergrk, #coverturk{
+	width: 100%;
+	height:  440px;
+	background-size: cover;
+}
+#cover{
+	background: url("../img/covercrop.jpg") no-repeat;
+}
+#covergrk{
+	background: url("../img/covergrk.jpg") no-repeat;
+}
+#coverturk{
+	background: url("../img/coverturk.jpg") no-repeat;
+}
+#holder{
+	width: 100%;
+	height: inherit;
+	position: relative;
+}
+#slogan{
+	width: 80%;
+	text-align: left;
+	padding-bottom: 85px;
+	padding-left: 70px;
+	position: absolute;
+	bottom: 0px;
+	font-size: 22px;
+}
+#slogan h2{
+	color: #fff;
+	text-shadow: 5px 5px 5px #000;
+}
+.box{
+	margin-top: 50px;
+}
+.box_left{
+	float: left;
+	width: 53%;
+}
+.box_right{
+	float: right;
+	width: 53%;
+}
+.box_img{
+	width: 320px;
+}
+.box_img img{
+	border-radius: 50%;
+	width: 300px;
+}
+.boxleft_txt h3{
+	padding-top: 20px;
+	font-size: 22px;	
+	padding-left: 40px;
+}
+.boxleft_txt p{
+	padding-top: 30px;
+	font-size: 19px;
+	line-height: 25px;
+	margin-left: 40px;
+}
+.boxright_txt h3{
+	padding-top: 20px;
+	font-size: 22px;	
+	padding-right: 40px;
+}
+.boxright_txt p{
+	padding-top: 30px;
+	font-size: 19px;
+	line-height: 25px;
+	margin-right: 40px;
+}
+footer{
+	background-color: #1dadc0;
+	margin-top: 25px;
+	padding: 20px 0px;
+	position: relative;
+}
+#me{
+	float: left;
+}
+#me p{
+	font-size: 27px;
+	color: #fff;
+}
+#contacts{
+	float: right;
+	text-align:right;
+}
+#contacts ul{
+	padding-top: 9px;
+}
+#contacts ul li{
+	display: inline-block;
+	margin-left: 15px;
+}
+#contacts a{
+	font-size: 17px;
+	color: #fff;
+}
+.profile{
+	margin-top: 60px;
+	margin-bottom: 167px;
+	padding-right: 170px;
+	background-color: #bdedf3;
+	padding-top: 40px;
+	padding: 40px 20px 40px;
+}
+.profile_portrait img{
+	border-radius: 50%;
+	width: 360px;
+	float: right;
+}
+.profile_txt{
+	text-align: left;
+	font-size: 22px;
+	line-height: 40px;
+	width: 600px;
+}
+#option_img_holder{
+	margin-top: 60px;
+	margin-left: 10px;
+}
+.option_head{
+
+	padding-bottom: 30px;
+}
+.option_head h4{
+	font-size: 34px;
+	text-align: center;
+}
+.option_head_txt p{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 55px;
+}
+.option_image{
+	float: left;
+}
+.option_image h2{
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 110px;
+	font-size: 36px;
+}
+.option_image img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	margin-left: 117px;
+}
+.option_center_img{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#info_holder{
+	margin-top: 60px;
+	background-color: #bdedf3;
+}
+.info_box h3{
+	font-size: 36px;
+	padding-bottom: 15px;
+}
+.info_box p{
+	font-size: 20px;
+	padding-left: 12px;
+	margin-bottom: 30px;
+}

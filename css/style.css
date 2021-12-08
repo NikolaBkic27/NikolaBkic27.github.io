@@ -1,0 +1,166 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Readex Pro', sans-serif;
+}
+.cleaner{
+	clear:both;
+}
+a{
+	text-decoration:none;
+}
+.bold{
+	font-weight: bold;
+}
+.active_page{
+	color: #ffa500;
+}
+.wrapper{
+	width:75%;
+	margin: 0 auto;
+}
+#top-header{
+	background-color: #1dadc0;
+}
+#heading{
+	float:left;
+	padding: 14px;
+}
+#heading h1{
+	color: #fff;
+	font-size: 50px;
+}
+#heading h1 a{
+	color: #fff;
+}
+#media{
+	float: right;
+	text-align:right;
+}
+#media ul{
+	padding-top: 31px;
+}
+#media ul li{
+	display: inline-block;
+	margin-left: 15px;
+}
+#media ul li a:hover{
+	color: #ffa500;
+}
+#media a{
+	font-size: 24px;
+	color: #fff;
+}
+header{
+	padding: 9px;
+	background-color: #fff;
+}
+header nav{
+	float: left;
+	text-align: center;
+}
+header nav ul{
+	list-style: none;
+}
+header nav ul li{
+    display: inline;
+    margin-left: 16px;
+	
+}
+header nav a{
+    font-size: 20px;
+	color: #000;
+}
+#cover{
+	width: 100%;
+	height:  440px;
+	background: url("../img/covercrop.jpg") no-repeat;
+	background-size: cover;
+	
+}
+#holder{
+	width: 100%;
+	height: inherit;
+	position: relative;
+}
+#slogan{
+	width: 100%;
+	text-align: left;
+	padding-bottom: 85px;
+	padding-left: 70px;
+	position: absolute;
+	bottom: 0px;
+	font-size: 22px;
+}
+#slogan h2{
+	color: #fff;
+	text-shadow: 5px 5px 5px #000;
+}
+.box{
+	margin-top: 50px;
+}
+.box_left{
+	float: left;
+	width: 53%;
+}
+.box_right{
+	float: right;
+	width: 53%;
+}
+.box_img{
+	width: 320px;
+}
+.box_img img{
+	border-radius: 50%;
+}
+.boxleft_txt h3{
+	padding-top: 20px;
+	font-size: 22px;	
+	padding-left: 40px;
+}
+.boxleft_txt p{
+	padding-top: 30px;
+	font-size: 19px;
+	line-height: 25px;
+	margin-left: 40px;
+}
+.boxright_txt h3{
+	padding-top: 20px;
+	font-size: 22px;	
+	padding-right: 40px;
+}
+.boxright_txt p{
+	padding-top: 30px;
+	font-size: 19px;
+	line-height: 25px;
+	margin-right: 40px;
+}
+footer{
+	background-color: #1dadc0;
+	margin-top: 25px;
+	padding: 20px 0px;
+}
+#copyright{
+	float: left;
+}
+#copyright p{
+	font-size: 27px;
+	color: #fff;
+}
+#contacts{
+	float: right;
+	text-align:right;
+}
+#contacts ul{
+	padding-top: 9px;
+}
+#contacts ul li{
+	display: inline-block;
+	margin-left: 15px;
+}
+#contacts a{
+	font-size: 17px;
+	color: #fff;
+}

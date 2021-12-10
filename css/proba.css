@@ -34,12 +34,6 @@ a{
 }
 #heading h1 a{
 	color: #fff;
-	animation-name: tophead;
-	animation-duration: 2s;
-}
-@keyframes tophead{
-	from {color: #1dadc0;}
-	to {color: #fff;}
 }
 #media{
 	float: right;
@@ -58,22 +52,14 @@ a{
 #media a{
 	font-size: 24px;
 	color: #fff;
-	animation-name: tophead;
-	animation-duration: 2s;
 }
 header{
 	padding: 9px;
 	background-color: #fff;
-	animation-name: enter_nav;
-	animation-duration: 4s;
 }
 header nav{
 	float: left;
 	text-align: center;
-	position: relative;
-	animation-name: enter_nav;
-	animation-duration: 2.5s;
-	animation-delay: -1s;
 }
 header nav ul{
 	list-style: none;
@@ -81,11 +67,7 @@ header nav ul{
 header nav ul li{
     display: inline;
     margin-left: 16px;
-}
-@keyframes enter_nav{
-	0% {left: 0px;}
-	50% {left: -1000px;}
-	100% {left: 0px;}
+	
 }
 header nav a{
     font-size: 20px;
@@ -217,11 +199,11 @@ footer{
 	margin-top: 60px;
 	margin-left: 10px;
 }
-.page_head{
-	padding-top: 30px;
+.option_head{
+
 	padding-bottom: 30px;
 }
-.page_head h4{
+.option_head h4{
 	font-size: 34px;
 	text-align: center;
 }

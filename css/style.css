@@ -37,6 +37,9 @@ a{
 	animation-name: tophead;
 	animation-duration: 2s;
 }
+#heading h1 a:hover{
+	color: #ffa500;
+}
 @keyframes tophead{
 	from {color: #1dadc0;}
 	to {color: #fff;}
@@ -175,9 +178,12 @@ footer{
 #me{
 	float: left;
 }
-#me p{
+#me a{
 	font-size: 27px;
 	color: #fff;
+}
+#me a:hover{
+	color: #ffa500;
 }
 #contacts{
 	float: right;
@@ -193,6 +199,9 @@ footer{
 #contacts a{
 	font-size: 17px;
 	color: #fff;
+}
+#contacts a:hover{
+	color: #ffa500;
 }
 .profile{
 	margin-top: 60px;

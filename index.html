@@ -15,34 +15,7 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- page Navigation -->
-    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1 class="title nb-title navbar-fixed-top.scrolled">Movie<span class="nb-span">Buffs</span></h1>  
-            </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">                     
-                    <li class="nav-item">
-                        <a class="nav-link" href="#recomended">Recomendations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events">Upcoming Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Download PDF</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav id="nb-navigation" class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10"> 
     </nav>
     <!-- End Of Second Navigation -->
 
@@ -62,8 +35,8 @@
     <!-- End Of Page Header -->
     <span id="recomended"></span>
     <section class="section p-4">
-        <h6 class="section-title text-center mt-5">Our Service</h6>
-        <h6 class="section-subtitle text-center mb-5 pb-3">Voluptates architecto provident deserunt.</h6>
+        <h6 class="section-title text-center mt-5">Our Must Watch List</h6>
+        <h6 class="section-subtitle text-center mb-5 pb-3">We believe that every self respecting movie buff should be familiar with these titles, if you haven't watched any of these go ahead and pick one or let us pick for you.</h6>
     </section>
     <section id="nb-section-bg" class="section p-0">
        <div class="nb-row-width mx-auto">
@@ -115,8 +88,8 @@
     <!-- Blog Section -->
     <section class="section" id="events">
         <div class="container">
-            <h6 id="event-timer"class="section-title mb-0 text-center">Latest Articles</h6>
-            <h6 id="event-description" class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
+            <h6 id="event-timer"class="section-title mb-0 text-center"></h6>
+            <h6 id="event-description" class="section-subtitle mb-5 text-center">We will be meeting-up soon to watch a movie together, fill out the form if you want to join, and if you want to read our catalog as well then provide us with your address as well and if you already filled out the form with an e-mail address check your inbox.</address></h6>
         </div>
     </section>
     <!-- End of Blog Section -->
@@ -163,53 +136,7 @@
                 <div class="col-md-7">
                     <form id="news-form"action="getphp.php">
                         <h4 class="mb-4">Sing-Up for our News Letter</h4>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <input type="text" id ="first-name" class="form-control text-white rounded-0 bg-transparent" name="first-name" placeholder="First name">
-                                <div class="form-group ">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" id = "last-name"class="form-control text-white rounded-0 bg-transparent" name="last-name" placeholder="Last name">
-                                <div class="form-group ">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" id="phone" class="form-control text-white rounded-0 bg-transparent" name="phone" placeholder="Phone: +381 6X XXXXXXX">
-                                <div class="form-group ">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" id="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email(optional)">
-                                <div class="form-group">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
-                                <div class="form-group">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-
-                            <!-- Namenjen da zauzima prostor-->
-                            <div class="form-group col-sm-4 nb-visibility-hidden">
-                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
-                            </div>
-                            <!-------------------------------->
-                            <div class="form-group col-12">
-                                <label for="gender"class="nb-rabio-label">Male:</label> <input type="radio" class="nb-radio" id="radioMale" name="gender">
-                                <label for="gender"class="nb-rabio-label">Female:</label> <input type="radio" class="nb-radio" id="radioFemale" name="gender"">
-                                <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                            </div>
-                            
-                            <div class="form-group col-12 mb-0">
-                                <p class="nb-dispay-none">Succsess</p>
-                                <button id="info-btn" type="button" class="btn btn-primary rounded w-md mt-3">Send</button>
-                            </div>                          
+                        <div id = "form-row" class="form-row">
                         </div>                          
                     </form>
                 </div>

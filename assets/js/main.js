@@ -1,6 +1,29 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
-    let sectionLocation = document.querySelector("#service");
-//Start of Pre-filter content
+let navigationLocation = document.querySelector("#nb-navigation");
+let navigationDefault = `<div class="container">
+<a class="navbar-brand" href="#">
+    <h1 class="title nb-title navbar-fixed-top.scrolled">Movie<span class="nb-span">Buffs</span></h1>  
+</a>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">`;
+let navigationList = ["recomended", "about", "events", "contact"];
+let navigationText = ["Redomendations", "About Us", "Upcoming Events", "Contact"]
+
+for(let i in navigationList){
+    navigationDefault += `<li class="nav-item">
+    <a class="nav-link" href="#${navigationList[i]}">${navigationText[i]}</a>
+</li>`
+}
+navigationDefault += `<li class="nav-item">
+<a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Download PDF</a>
+</li>
+</ul>
+</div>
+</div>`
+navigationLocation.innerHTML = navigationDefault
+
+let sectionLocation = document.querySelector("#service");//lokacija filmova
+    //Start of Pre-filter content
 let movieText = [`Legendary marshal Wyatt Earp, now a weary gunfighter, joins his brothers Morgan and Virgil to pursue their collective fortune in the thriving mining town of Tombstone. But Earp is forced to don a badge again and get help from 				
 his notorious pal Doc Holliday when a gang of renegade brigands and rustlers begins terrorizing the town.`, `During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet.
 When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when 
@@ -171,8 +194,163 @@ modalContent()
 //End of filtering content
 
 //Start of Timer
+let targetDate= new Date ("Dec 29, 2022 16:30:00").getTime();
+setInterval(function() {
+    let currentTime = new Date().getTime()
+    let remainingTime = targetDate - currentTime;
 
+   
+    let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24))
+    let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60))
+    let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000)
+   
+    
+    if(remainingTime > 0){
+        document.getElementById("event-timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`
+    }
+    else {
+        document.getElementById("event-timer").innerHTML = "Looks like we missed you, don't worry a new meet-up time will be posted shortly"
+      }
+    
+  
+    // If the count down is finished, write some text
+    
+  }, 1000);
 //End of Timer
+
+//Start of Form Generation
+{/* <h4 class="mb-4">Sing-Up for our News Letter</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" id ="first-name" class="form-control text-white rounded-0 bg-transparent" name="first-name" placeholder="First name">
+                                <div class="form-group ">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" id = "last-name"class="form-control text-white rounded-0 bg-transparent" name="last-name" placeholder="Last name">
+                                <div class="form-group ">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" id="phone" class="form-control text-white rounded-0 bg-transparent" name="phone" placeholder="Phone: +381 6X XXXXXXX">
+                                <div class="form-group ">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" id="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email(optional)">
+                                <div class="form-group">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
+                                <div class="form-group">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+
+                            <!-- Namenjen da zauzima prostor-->
+                            <div class="form-group col-sm-4 nb-visibility-hidden">
+                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
+                            </div>
+                            <!-------------------------------->
+                            <div class="form-group col-12">
+                                <label for="gender"class="nb-rabio-label">Male:</label> <input type="radio" class="nb-radio" id="radioMale" value="m" name="gender">
+                                <label for="gender"class="nb-rabio-label">Female:</label> <input type="radio" class="nb-radio" id="radioFemale" value="f" name="gender"">
+                                <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                            </div>
+                            
+                            <div class="form-group col-12 mb-0">
+                                <p class="nb-dispay-none">Succsess</p>
+                                <button id="info-btn" type="button" class="btn btn-primary rounded w-md mt-3">Send</button>
+                            </div>                          
+                        </div>   */}
+let divFormRow = document.querySelector("#form-row");
+let namesAndIds = ["first-name", "last-name", "phone", "email", "address"]
+let placeholders = ["First Name", "Last name", "Phone: +381 6X XXXXXXX", "Email(optional)", "Address(optional)"]
+let listOfClasses = ["form-control", "text-white", "rounded-0", "bg-transparent"]
+let pTagClasses = ["alert", "alert-danger", "nb-visibility-hidden"]
+
+//Input Tags
+for (let i in namesAndIds){
+    let firstDiv = document.createElement("div");
+    firstDiv.classList.add("form-group")
+    firstDiv.classList.add("col-sm-4")
+    let inputText = document.createElement("input")
+    inputText.setAttribute("type","text")
+    inputText.setAttribute("id",`${namesAndIds[i]}`)
+    inputText.setAttribute("name",`${namesAndIds[i]}`)
+    inputText.setAttribute("placeholder",`${placeholders[i]}`)
+    for (let i in listOfClasses){
+        inputText.classList.add(`${listOfClasses[i]}`)
+    }
+    firstDiv.appendChild(inputText);
+    let secondDiv = document.createElement("div")
+    secondDiv.classList.add("form-group");
+    let secondDivP = document.createElement("p");
+    for(let i in pTagClasses){
+        secondDivP.classList.add(`${pTagClasses[i]}`)
+    }
+    let secondDivPNode = document.createTextNode("");
+    secondDivP.appendChild(secondDivPNode);
+    secondDiv.appendChild(secondDivP);
+    firstDiv.appendChild(secondDiv);
+    divFormRow.appendChild(firstDiv)
+}
+//Radio Btns
+let divAlt = document.createElement("div")
+divAlt.classList.add("form-group")
+divAlt.classList.add("col-12")
+let genders = ["Male", "Female"]
+for(let i in genders){
+    let labelRbtn = document.createElement("label");
+    labelRbtn.setAttribute("for",`gender`)
+    labelRbtn.appendChild(document.createTextNode(`${genders[i]}:`))
+    labelRbtn.classList.add("nb-rabio-label");
+    divAlt.appendChild(labelRbtn)
+    let rbtn = document.createElement("input");
+    rbtn.setAttribute("type", "radio")
+    rbtn.classList.add("nb-radio")
+    rbtn.setAttribute("id", `radio${genders[i]}`)
+    rbtn.setAttribute("value", `${genders[i].substring(0,1).toLowerCase()}`)
+    rbtn.setAttribute("name","gender");
+    rbtn.classList.add("mr-1")
+    rbtn.classList.add("ml-1")
+    divAlt.appendChild(rbtn);
+}
+let RbtnP = document.createElement("p")
+RbtnP.classList.add("alert")
+RbtnP.classList.add("alert-danger")
+RbtnP.classList.add("nb-visibility");
+RbtnP.appendChild(document.createTextNode(""));
+divAlt.appendChild(RbtnP)
+divFormRow.appendChild(divAlt)
+//Button
+let finalDiv = document.createElement("div");
+finalDiv.classList.add("form-group")
+finalDiv.classList.add("col-12")
+finalDiv.classList.add("mb-0") 
+let btnP = document.createElement("p");
+btnP.classList.add("nb-dispay-none");
+btnP.setAttribute("id", "form-sucs")
+btnP.appendChild(document.createTextNode(""));
+finalDiv.appendChild(btnP);
+let btn = document.createElement("button");
+btn.classList.add("btn")
+btn.classList.add("btn-primary")
+btn.classList.add("rounded")
+btn.classList.add("w-md")
+btn.classList.add("mt-3")
+btn.setAttribute("id", "info-btn")
+btn.setAttribute("type", "button")
+btn.appendChild(document.createTextNode("Send"))
+finalDiv.appendChild(btn)
+divFormRow.appendChild(finalDiv)
+//End of Form Generation
 
 //Start of Form Validation
 let nameRegex = /^([A-Z][a-z]{2,19})(\s[A-Z][a-z)]{2,19})?$/;
@@ -201,19 +379,18 @@ infoBtn.addEventListener("click",function(){
     mistakeCount += radioCheck();
 
     if (mistakeCount == 5){
-        infoBtn.previousElementSibling.classList.add("nb-input-success")
-        infoBtn.previousElementSibling.innerHTML = "Thank you! Your data has been saved and succesfully."
-        infoBtn.previousElementSibling.classList.remove("nb-dispay-none")
+        document.querySelector("#form-sucs").classList.add("nb-input-success")
+        document.querySelector("#form-sucs").innerHTML = "Thank you! Your data has been saved and succesfully."
+        document.querySelector("#form-sucs").classList.remove("nb-dispay-none")
         document.querySelector("#news-form").reset();
     }
     else{
-        infoBtn.previousElementSibling.classList.remove("nb-input-success")
-        infoBtn.previousElementSibling.innerHTML = ""
-        infoBtn.previousElementSibling.classList.add("nb-dispay-none")
+        document.querySelector("#form-sucs").classList.remove("nb-input-success")
+        document.querySelector("#form-sucs").innerHTML = "";
+        document.querySelector("#form-sucs").classList.add("nb-dispay-none")
     }
-
 });
-
+//START OF JQUERY SECTION
 $(document).ready(function(){
     var scroll_pos = 0;
     $(document).scroll(function() { 
@@ -233,12 +410,13 @@ e.preventDefault()
 $("#modal").css("display", "none");
 })
 });
+//END OF JQUERY SECTION
 function radioCheck (){
     let checkedValue = "";
     for(let i in genderArray){
         if(genderArray[i].checked){
             checkedValue = genderArray[i].value;
-            break;//Iako ima samo dve moguce vrednosti ostavio sam break radi ispravnosti
+            break;//Iako ima samo dve moguce vrednosti ostavio sam break radi ispravnosti s obzirom da je radioBtn
         }
     }
     if(checkedValue == ""){

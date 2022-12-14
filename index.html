@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>LeadMark Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="assets/css/leadmark.css">
+    <script src="https://kit.fontawesome.com/e5a1f35471.js" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 class="title nb-title navbar-fixed-top.scrolled">Movie<span class="nb-span">Buffs</span></h1>  
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recomended">Recomendations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Upcoming Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Download PDF</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+            <h1 class="subtitle">Welcome to our club</h1>
+            <h1 class="title">Movie<span class="nb-span">Buffs</span></h1>  
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+    <span id="recomended"></span>
+    <section class="section p-4">
+        <h6 class="section-title text-center mt-5">Our Service</h6>
+        <h6 class="section-subtitle text-center mb-5 pb-3">Voluptates architecto provident deserunt.</h6>
+    </section>
+    <section id="nb-section-bg" class="section p-0">
+       <div class="nb-row-width mx-auto">
+        <form action="getphp.php" class="d-flex justify-content-end align-items-center" id="filter-form">
+            <select name="filter-genres" id="ddlGenres"></select>
+            <input type="button" value="Filter" id="filterBtn"/>
+        </form>
+       </div>
+    </section>
+    <!-- Movie Section -->
+    <section  id="service" class="section pt-0">
+        
+    </section>
+    <!-- End OF Movie Section -->
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">About the Club</h6>
+                    <p>MovieBuffs is a club/network of movie goers such as yourself who have elected to find others that share in our common interest and to make some friends and/or share our favorite movies, new and old!</p>
+                    <p>We provide an inclusive place for discussions and new about films, including major and minor releases</p>
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="section-title">Nikola Bkic 70/21</h6>
+                            <p class="mb-4">Nikola Bkic is our first founding member, and is still a leading member, infact he is the only member and really hopes that you join so that he doesn't have to be alone anymore. So what are you wating for!? Fill out the form at the bottom of the page and we will send you an invite for our next group watching seasion.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <img src="assets/imgs/about.jpg" alt="about-club" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <img src="assets/imgs/me.jpg" alt="me" class="nb-custom-width shadow-sm mt-3 ml-4">
+                </div>
+            </div>              
+        </div>
+    </section>
+    <!-- End OF About Section -->
+
+    <!-- Portfolio Section -->
+    
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+    <section class="section" id="events">
+        <div class="container">
+            <h6 id="event-timer"class="section-title mb-0 text-center">Latest Articles</h6>
+            <h6 id="event-description" class="section-subtitle mb-5 text-center">Architecto provident deserunt eveniet libero</h6>
+        </div>
+    </section>
+    <!-- End of Blog Section -->
+
+    <!-- Testmonial Section -->
+    
+    <!-- End of Testmonial Section -->
+
+    <!-- Movie Card Modal-->
+    <div id="modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" id = "close-modal-x"class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+              <button id="close-modal"type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    <h6 class="mb-0">Phone</h6>
+                    <p class="mb-4">+ 123-456-7890</p>
+
+                    <h6 class="mb-0">Address</h6>
+                    <p class="mb-4">12345 Fake ST NoWhere AB Country</p>
+
+                    <h6 class="mb-0">Email</h6>
+                    <p class="mb-0">info@website.com</p>
+                    <p></p>
+                </div>
+                <div class="col-md-7">
+                    <form id="news-form"action="getphp.php">
+                        <h4 class="mb-4">Sing-Up for our News Letter</h4>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <input type="text" id ="first-name" class="form-control text-white rounded-0 bg-transparent" name="first-name" placeholder="First name">
+                                <div class="form-group ">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" id = "last-name"class="form-control text-white rounded-0 bg-transparent" name="last-name" placeholder="Last name">
+                                <div class="form-group ">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" id="phone" class="form-control text-white rounded-0 bg-transparent" name="phone" placeholder="Phone: +381 6X XXXXXXX">
+                                <div class="form-group ">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" id="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email(optional)">
+                                <div class="form-group">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
+                                <div class="form-group">
+                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                                </div>
+                            </div>
+
+                            <!-- Namenjen da zauzima prostor-->
+                            <div class="form-group col-sm-4 nb-visibility-hidden">
+                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
+                            </div>
+                            <!-------------------------------->
+                            <div class="form-group col-12">
+                                <label for="gender"class="nb-rabio-label">Male:</label> <input type="radio" class="nb-radio" id="radioMale" name="gender">
+                                <label for="gender"class="nb-rabio-label">Female:</label> <input type="radio" class="nb-radio" id="radioFemale" name="gender"">
+                                <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
+                            </div>
+                            
+                            <div class="form-group col-12 mb-0">
+                                <p class="nb-dispay-none">Succsess</p>
+                                <button id="info-btn" type="button" class="btn btn-primary rounded w-md mt-3">Send</button>
+                            </div>                          
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+                <div class="row">
+                <p class="col-6 mb-0 small">&copy; <script>document.write(new Date().getFullYear())</script>, LeadMark Created By <a href="https://www.devcrud.com" target="_blank">DevCrud.</a>  All rights reserved </p> 
+                <div id="media" class="col-6">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/?lang=en">
+								<i class="fab fa-twitter-square"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/">
+								<i class="fab fa-instagram"></i></i>
+							</a>
+						</li>
+						<li>
+							<a href="sitemap.xml">
+								<i class="fas fa-sitemap"></i>
+							</a>
+						</li>
+					</ul>
+				</div>   
+                </div>
+                 
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="assets/js/leadmark.js"></script>
+    <!-- Nikola Bkic 70/21-->
+    <script src="assets/js/main.js"></script>
+    <script type = "text/javascript"src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</body>
+</html>

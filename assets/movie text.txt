@@ -1,0 +1,77 @@
+1. TOMBSTONE - Legendary marshal Wyatt Earp, now a weary gunfighter, joins his brothers Morgan and Virgil to pursue their 
+collective fortune in the thriving mining town of Tombstone. But Earp is forced to don a badge again and get help from 				
+his notorious pal Doc Holliday when a gang of renegade brigands and rustlers begins terrorizing the town.
+
+2. ALIEN - During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet.
+ When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside 
+one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when 
+the alien parasite planted inside its unfortunate host is birthed.
+
+3. HATEFUL EIGHT - Bounty hunters seek shelter from a raging blizzard and get caught up in a plot of betrayal and deception.
+
+4. GODFATHER - Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When 
+organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps 
+in to take care of the would-be killers, launching a campaign of bloody revenge.
+
+5. GOOD, BAD AND UGLY - While the Civil War rages between the Union and the Confederacy, three men – a quiet loner, a 
+ruthless hit man and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in 
+stolen gold.
+
+6. HOME ALONE - Eight-year-old Kevin McCallister makes the most of the situation after his family unwittingly leaves him 
+behind when they go on Christmas vacation. But when a pair of bungling burglars set their sights on Kevin's house, the 
+plucky kid stands ready to defend his territory. By planting booby traps galore, adorably mischievous Kevin stands his 
+ground as his frantic mother attempts to race home before Christmas Day
+
+7. TRUMAN SHOW - Truman Burbank is the star of "The Truman Show", a 24-hour-a-day "reality" TV show that broadcasts every 
+aspect of his life -- live and in color -- without his knowledge. His entire life has been an unending soap opera for 
+consumption by the rest of the world. And everyone he knows -- including his wife and his best friend -- is really an 
+actor, paid to be part of his life.
+
+8. ANNIHILATION - A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature 
+don't apply.
+
+9. GOODFELLAS - The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood 
+gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.
+
+10. HOLY GRAIL - King Arthur, accompanied by his squire, recruits his Knights of the Round Table, including Sir Bedevere the 
+Wise, Sir Lancelot the Brave, Sir Robin the Not-Quite-So-Brave-As-Sir-Lancelot and Sir Galahad the Pure. On the way, 
+Arthur battles the Black Knight who, despite having had all his limbs chopped off, insists he can still fight. They 
+reach Camelot, but Arthur decides not to enter, as "it is a silly place".
+
+11. BLADERUNNER - Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried 
+secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find 
+Rick Deckard, a former LAPD blade runner who has been missing for 30 years.
+
+12. BLADE - A rare mutation has occurred within the vampire community - The Reaper. A vampire so consumed with an insatiable 
+bloodlust that they prey on vampires as well as humans, transforming victims who are unlucky enough to survive into 
+Reapers themselves. Blade is asked by the Vampire Nation for his help in preventing a nightmare plague that would wipe 
+out both humans and vampires.
+
+13. DIE HARD - NYPD cop John McClane's plan to reconcile with his estranged wife is thrown for a serious loop when, minutes 
+after he arrives at her office, the entire building is overtaken by a group of terrorists. With little help from the 
+LAPD, wisecracking McClane sets out to single-handedly rescue the hostages and bring the bad guys down.
+
+14. THE THING - Scientists in the Antarctic are confronted by a shape-shifting alien that assumes the appearance of the 
+people it kills.
+
+15. FULL METAL JACKET - A pragmatic U.S. Marine observes the dehumanizing effects the U.S.-Vietnam War has on his fellow 
+recruits from their brutal boot camp training to the bloody street fighting in Hue.
+
+16. THE HANGOVER - When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in 
+the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug – who's supposed to be 
+tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to 
+the church on time.
+
+17. THE BIG LEBOWSKI - Jeffrey "The Dude" Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, 
+is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange 
+series of events involving nihilists, film producers, ferrets, errant toes, and large sums of money.
+
+18. ADDAMS FAMILY - When an evil doctor finds out Uncle Fester has been missing for 25 years, he introduces a fake Fester 
+in an attempt to get the Addams family's money. Wednesday has some doubts about the new uncle Fester, but the fake uncle 
+adapts very well to the strange family.
+
+
+ACTION - BLADE, BLADERUNNER, DIE HARD, GOOD BAD UGLY, FULL METAL JACKET
+STORY_DRIVEN - GOODFELLAS, GODFATHER, TOMBSTONE, HATEFUL EIGHT
+HORROR - THE THING, ALIEN, ANNIHILATION
+COMEDY - THE BIG LEBOWSKI, ADDAMS FAMILY, HOLY GRAIL, TRUMAN SHOW, HOME ALONE , THE HANGOVER

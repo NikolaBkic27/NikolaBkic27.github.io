@@ -15,7 +15,7 @@ for(let i in navigationList){
 </li>`
 }
 navigationDefault += `<li class="nav-item">
-<a href="components.html" class="ml-4 nav-link btn btn-primary btn-sm rounded">Download PDF</a>
+<a href="Dokumentacija.pdf" class="ml-4 nav-link btn btn-primary btn-sm rounded">Documentation</a>
 </li>
 </ul>
 </div>
@@ -220,55 +220,6 @@ setInterval(function() {
 //End of Timer
 
 //Start of Form Generation
-{/* <h4 class="mb-4">Sing-Up for our News Letter</h4>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <input type="text" id ="first-name" class="form-control text-white rounded-0 bg-transparent" name="first-name" placeholder="First name">
-                                <div class="form-group ">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" id = "last-name"class="form-control text-white rounded-0 bg-transparent" name="last-name" placeholder="Last name">
-                                <div class="form-group ">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" id="phone" class="form-control text-white rounded-0 bg-transparent" name="phone" placeholder="Phone: +381 6X XXXXXXX">
-                                <div class="form-group ">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" id="email" class="form-control text-white rounded-0 bg-transparent" name="email" placeholder="Email(optional)">
-                                <div class="form-group">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
-                                <div class="form-group">
-                                    <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                                </div>
-                            </div>
-
-                            <!-- Namenjen da zauzima prostor-->
-                            <div class="form-group col-sm-4 nb-visibility-hidden">
-                                <input type="text" id="address" class="form-control text-white rounded-0 bg-transparent" name="address" placeholder="Address(optional)">
-                            </div>
-                            <!-------------------------------->
-                            <div class="form-group col-12">
-                                <label for="gender"class="nb-rabio-label">Male:</label> <input type="radio" class="nb-radio" id="radioMale" value="m" name="gender">
-                                <label for="gender"class="nb-rabio-label">Female:</label> <input type="radio" class="nb-radio" id="radioFemale" value="f" name="gender"">
-                                <p class="alert alert-danger nb-visibility-hidden">ERROR</p>
-                            </div>
-                            
-                            <div class="form-group col-12 mb-0">
-                                <p class="nb-dispay-none">Succsess</p>
-                                <button id="info-btn" type="button" class="btn btn-primary rounded w-md mt-3">Send</button>
-                            </div>                          
-                        </div>   */}
 let divFormRow = document.querySelector("#form-row");
 let namesAndIds = ["first-name", "last-name", "phone", "email", "address"]
 let placeholders = ["First Name", "Last name", "Phone: +381 6X XXXXXXX", "Email(optional)", "Address(optional)"]

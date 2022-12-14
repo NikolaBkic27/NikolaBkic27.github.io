@@ -1,9 +1,8 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
 window.onload = function(){
-    let url = document.location.pathname;
+    let url = document.location.href;
     console.log(url);
-    if(url == "/" || url == "/index.html" || url == "http://127.0.0.1:5500/" || url =="nikolabkic27.github.io/"){
-        let sectionLocation = document.querySelector("#service");
+    let sectionLocation = document.querySelector("#service");
 //Start of Pre-filter content
 let movieText = [`Legendary marshal Wyatt Earp, now a weary gunfighter, joins his brothers Morgan and Virgil to pursue their collective fortune in the thriving mining town of Tombstone. But Earp is forced to don a badge again and get help from 				
 his notorious pal Doc Holliday when a gang of renegade brigands and rustlers begins terrorizing the town.`, `During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet.
@@ -107,8 +106,8 @@ ddlGenres.appendChild(optRand);
 
 let btnFilter = document.querySelector("#filterBtn");
 filterBtn.addEventListener("click", function(){
-    let newMovieList = []
-    let newMoviePosters = []
+    // let newMovieList = []
+    // let newMoviePosters = []
     let selectedGenre = ddlGenres.options[ddlGenres.selectedIndex].value;
     console.log(selectedGenre);
     movieList = `<div class="container-fluid m-0 mx-auto">
@@ -314,7 +313,6 @@ function modalContent(){
         $("#modal").slideDown("slow")
     })
 }
-    }
 }
 
 

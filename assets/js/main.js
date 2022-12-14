@@ -2,7 +2,7 @@
 window.onload = function(){
     let url = document.location.pathname;
     console.log(url);
-    if(url == "/" || url == "/index.html" || url == "http://127.0.0.1:5500/" || url="nikolabkic27.github.io/"){
+    if(url == "/" || url == "/index.html" || url == "http://127.0.0.1:5500/" || url =="nikolabkic27.github.io/"){
         let sectionLocation = document.querySelector("#service");
 //Start of Pre-filter content
 let movieText = [`Legendary marshal Wyatt Earp, now a weary gunfighter, joins his brothers Morgan and Virgil to pursue their collective fortune in the thriving mining town of Tombstone. But Earp is forced to don a badge again and get help from 				

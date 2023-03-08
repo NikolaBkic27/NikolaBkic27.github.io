@@ -1,6 +1,6 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
 if(window.location.href == "https://nikolabkic27.github.io/"){
-    console.log(USPEH);
+    console.log("USPEH");
 }
 let navigationLocation = document.querySelector("#nb-navigation");
 let navigationDefault = `<div class="container">

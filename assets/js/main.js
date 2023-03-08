@@ -1,5 +1,7 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
-console.log(window.location.href);
+if(window.location.href == "https://nikolabkic27.github.io/"){
+    console.log(USPEH);
+}
 let navigationLocation = document.querySelector("#nb-navigation");
 let navigationDefault = `<div class="container">
 <a class="navbar-brand" href="#">

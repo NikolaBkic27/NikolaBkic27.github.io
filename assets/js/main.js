@@ -593,24 +593,23 @@ function ajaxCallback(file, doThis){
             doThis(rezult);
         },
         error: function(xhr){
-            // console.log(jqXHR);
-            var msg = '';
+            var err_msg = '';
             if (jqXHR.status === 0) {
-            msg = 'Not connect.\n Verify Network.';
+            err_msg = 'Not connect.\n Verify Network.';
             } else if (jqXHR.status == 404) {
-            msg = 'Requested page not found. [404]';
+            err_msg = 'Requested page not found. [404]';
             } else if (jqXHR.status == 500) {
-            msg = 'Internal Server Error [500].';
+            err_msg = 'Internal Server Error [500].';
             } else if (exception === 'parsererror') {
-            msg = 'Requested JSON parse failed.';
+            err_msg = 'Requested JSON parse failed.';
             } else if (exception === 'timeout') {
-            msg = 'Time out error.';
+            err_msg = 'Time out error.';
             } else if (exception === 'abort') {
-            msg = 'Ajax request aborted.';
+            err_msg = 'Ajax request aborted.';
             } else {
-            msg = 'Uncaught Error.\n' + jqXHR.responseText;
+            err_msg = 'Uncaught Error.\n' + jqXHR.responseText;
             }
-            alert(msg);
+            alert(err_msg);
         }
     })
 }

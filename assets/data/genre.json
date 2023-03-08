@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Popular Science"
+    },
+    {
+        "id": 2,
+        "name": "Thriller & Adventure"
+    },
+    {
+        "id": 3,
+        "name": "Children's Fiction"
+    },
+    {
+        "id": 4,
+        "name": "Crime"
+    },
+    {
+        "id": 5,
+        "name": "Fantasy"
+    }
+]

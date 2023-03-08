@@ -1,0 +1,674 @@
+[
+    {
+        "productID": 1,
+        "title": "The God Delusion",
+        "authorID": 1,
+        "img": "godDelusion.jpg",
+        "formats": 
+        [
+            {
+            "type": 1,
+            "price": 19.99,
+            "details": 
+            [
+                {
+                    "name": "Product Dimensions",
+                    "value": "5.40(w) x 8.20(h) x 1.30(d)"
+                },
+                {
+                    "name": "Page Count",
+                    "value": 464
+                }
+            ]
+            },
+            {
+            "type": 4,
+            "price": 14.99,
+            "details":
+                [
+                    {
+                       "name": "File size",
+                        "value": "826 KB"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 464
+                    }
+                ]
+            },
+            {
+            "type": 3,
+            "price": 9.99,
+            "details":
+                [
+                    {
+                        "name": "Listening leangth",
+                        "value": "13 hours, 53 minutes"
+                    },
+                    {
+                        "name": "File size",
+                        "value": "1.1 MB"
+                    }
+                ]
+            }
+        ],
+        "published": "01/19/2007",
+        "genreID": 1,
+        "description": "Dawkins has fashioned an impassioned, rigorous rebuttal to religion, to be embraced by anyone who sputters at the inconsistencies and cruelties that riddle the Bible, bristles at the inanity of 'intelligent design', or agonizes over fundamentalism in the Middle East-or Middle America."
+    },
+    {
+        "productID": 2,
+        "title": "The Da Vinci Code",
+        "authorID": 2,
+        "img": "daVinchiCode.jpg",
+        "formats": 
+        [
+            {
+            "type": 1,
+            "price": 15.95,
+            "details": 
+            [
+                {
+                    "name": "Product Dimensions",
+                    "value": "5.24(w) x 8.02(h) x 1.00(d)"
+                },
+                {
+                    "name": "Page Count",
+                    "value": 480
+                }
+            ]
+            },
+            {
+            "type": 2,
+            "price": 35.00,
+            "details":
+                [
+                    {
+                       "name": "Product dimensions",
+                        "value": "6.10(w) x 9.30(h) x 1.40(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 454
+                    }
+                ]
+            },
+            {
+            "type": 3,
+            "price": 11.99,
+            "details":
+                [
+                    {
+                        "name": "Listening leangth",
+                        "value": "6 hours, 11 minutes"
+                    },
+                    {
+                        "name": "File size",
+                        "value": "1.1 MB"
+                    }
+                ]
+            }
+        ],
+        "published": "03/28/2006",
+        "genreID": 2,
+        "description": "The Da Vinci Code heralds the arrival of a new breed of lightning-paced, intelligent thriller¿utterly unpredictable right up to its stunning conclusion."
+    },
+    {
+        "productID": 3,
+        "title": "Harry Potter and the Deathly Hallows",
+        "authorID": 3,
+        "img": "HP_DH.jpg",
+        "formats": 
+        [
+            {
+            "type": 1,
+            "price": 13.99,
+            "details": 
+            [
+                {
+                    "name": "Product Dimensions",
+                    "value": "7.64(w) x 5.30(h) x 1.73(d)"
+                },
+                {
+                    "name": "Page Count",
+                    "value": 784
+                }
+            ]
+            },
+            {
+            "type": 2,
+            "price": 34.19,
+            "details":
+                [
+                    {
+                       "name": "Product dimensions",
+                        "value": "6.40(w) x 9.10(h) x 2.20(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 784
+                    }
+                ]
+            },
+            {
+            "type": 3,
+            "price": 39.99,
+            "details":
+                [
+                    {
+                        "name": "Listening leangth",
+                        "value": "21 hours, 36 minutes"
+                    },
+                    {
+                        "name": "File size",
+                        "value": "2.3 MB"
+                    }
+                ]
+            }
+        ],
+        "published": "07/07/2009",
+        "genreID": 3,
+        "description": "\"Give me Harry Potter,' said Voldemort's voice, 'and none shall be harmed. Give me Harry Potter, and I shall leave the school untouched. Give me Harry Potter, and you will be rewarded.\""
+    },
+    {
+        "productID": 4,
+        "title": "Harry Potter and the Deathly Hallows",
+        "authorID": 3,
+        "img": "HP_PS.jpg",
+        "formats": 
+        [
+            {
+            "type": 2,
+            "price": 20.00,
+            "details":
+                [
+                    {
+                       "name": "Product dimensions",
+                        "value": "5.27(w) x 8.15(h) x 0.91(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 272
+                    }
+                ]
+            }
+        ],
+        "published": "06/26/1997",
+        "genreID": 3,
+        "description": "Harry Potter and the Philosopher's Stone is a 1997 fantasy novel written by British author J. K. Rowling."
+    },
+    {
+        "productID": 5,
+        "title": "Harry Potter and the Prisoner of Azkaban",
+        "authorID": 3,
+        "img": "HP_PA.jpg",
+        "formats": 
+        [
+            {
+            "type": 1,
+            "price": 10.99,
+            "details":
+                [
+                    {
+                       "name": "Product dimensions",
+                        "value": "5.25(w) x 7.63(h) x 0.00(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 448
+                    }
+                ]
+            }
+        ],
+        "published": "05/31/2006",
+        "genreID": 3,
+        "description": "You-Know-Who was Black's downfall as well. And the Azkaban guards heard Black muttering in his sleep, \"He's at Hogwarts... he's at Hogwarts.\"Harry Potter isn't safe, not even within the walls of his magical school, surrounded by his friends. Because on top of it all, there may be a traitor in their midst."
+    },
+    {
+        "productID": 6,
+        "title": "Angels and Demons",
+        "authorID": 2,
+        "img": "angels&demons.jpg",
+        "formats": 
+        [
+            {
+            "type": 1,
+            "price": 18.99,
+            "details":
+                [
+                    {
+                       "name": "Product dimensions",
+                        "value": "5.30(w) x 8.20(h) x 1.30(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 496
+                    }
+                ]
+            },
+            {
+            "type": 4,
+            "price": 9.99,
+            "details":
+                [
+                    {
+                        "name": "File size",
+                        "value": "4 MB"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 448
+                    }
+                ]
+            }
+        ],
+        "published": "05/03/2005",
+        "genreID": 2,
+        "description": "Langdon’s worst fears are confirmed on the eve of the Vatican’s holy conclave, when a messenger of the Illuminati announces they have hidden an unstoppable time bomb at the very heart of Vatican City. With the countdown under way, Langdon jets to Rome to join forces with Vittoria Vetra, a beautiful and mysterious Italian scientist, to assist the Vatican in a desperate bid for survival."
+    },
+    {
+        "productID": 7,
+        "title": "The Lost Symbol",
+        "authorID": 2,
+        "img": "lostSymbol.jpg",
+        "formats": 
+        [
+            {
+            "type": 1,
+            "price": 8.99,
+            "details":
+                [
+                    {
+                       "name": "Product dimensions",
+                        "value": "4.20(w) x 7.50(h) x 1.80(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 656
+                    }
+                ]
+            },
+            {
+            "type": 2,
+            "price": 35.00,
+            "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.20(w) x 9.10(h) x 2.00(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 528
+                    }
+                ]
+            }
+        ],
+        "published": "09/15/2009",
+        "genreID": 2,
+        "description": "Famed Harvard symbologist Robert Langdon answers an unexpected summons to appear at the U.S. Capitol Building. His plans are interrupted when a disturbing object—artfully encoded with five symbols—is discovered in the building. Langdon recognizes in the find an ancient invitation into a lost world of esoteric, potentially dangerous wisdom."
+    },
+    {
+        "productID": 8,
+        "title": "The Complete Sherlock Holmes Collection",
+        "authorID": 4,
+        "img": "SherlockComplete.jpg",
+        "formats": 
+        [
+            {
+            "type": 2,
+            "price": 48.99,
+            "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.20(w) x 9.30(h) x 2.20(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 1096
+                    }
+                ]
+            }
+        ],
+        "published": "10/14/1892",
+        "genreID": 4,
+        "description": "Sherlock Holmes is a fictional detective of the late 19th and early 20th centuries, who first appeared in publication in 1887. He was devised by British author and physician Sir Arthur Conan Doyle. A brilliant London-based detective, Holmes is famous for his prowess at using logic and astute observation to solve cases."
+    },
+    {
+        "productID": 9,
+        "title": "A Storm of Swords",
+        "authorID": 5,
+        "img": "stormOfSwords.jpg",
+        "formats": 
+        [
+            {
+            "type": 2,
+            "price": 32.49,
+            "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.64(w) x 9.60(h) x 2.23(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 992
+                    }
+                ]
+            },
+            {
+                "type": 1,
+                "price": 17.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.14(w) x 9.18(h) x 1.74(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 1008
+                    }
+                ]
+            }
+        ],
+        "published": "10/31/2000",
+        "genreID": 5,
+        "description": "Of the five contenders for power, one is dead, another in disfavor, and still the wars rage as violently as ever, as alliances are made and broken. Joffrey, of House Lannister, sits on the Iron Throne, the uneasy ruler of the land of the Seven Kingdoms. His most bitter rival, Lord Stannis, stands defeated and disgraced, the victim of the jealous sorceress who holds him in her evil thrall. But young Robb, of House Stark, still rules the North from the fortress of Riverrun. Robb plots against his despised Lannister enemies, even as they hold his sister hostage at King’s Landing, the seat of the Iron Throne. Meanwhile, making her way across a blood-drenched continent is the exiled queen, Daenerys, mistress of the only three dragons still left in the world. . . ."
+    },
+    {
+        "productID": 10,
+        "title": "A Feast For Crows",
+        "authorID": 5,
+        "img": "feastForCrows.jpg",
+        "formats": 
+        [
+            {
+            "type": 2,
+            "price": 32.49,
+            "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.50(w) x 9.62(h) x 1.60(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 784
+                    }
+                ]
+            },
+            {
+                "type": 1,
+                "price": 15.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.80(w) x 8.90(h) x 1.40(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 784
+                    }
+                ]
+            }
+        ],
+        "published": "10/30/2007",
+        "genreID": 5,
+        "description": "It seems too good to be true. After centuries of bitter strife and fatal treachery, the seven powers dividing the land have decimated one another into an uneasy truce. Or so it appears. . . . With the death of the monstrous King Joffrey, Cersei is ruling as regent in King’s Landing. Robb Stark’s demise has broken the back of the Northern rebels, and his siblings are scattered throughout the kingdom like seeds on barren soil. Few legitimate claims to the once desperately sought Iron Throne still exist—or they are held in hands too weak or too distant to wield them effectively. The war, which raged out of control for so long, has burned itself out."
+    },
+    {
+        "productID": 11,
+        "title": "The Hobbit and The Lord of the Rings Boxed Set",
+        "authorID": 6,
+        "img": "LOTR-FULLCollection.jpg",
+        "formats": 
+        [
+            {
+                "type": 1,
+                "price": 72.00,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.60(w) x 8.40(h) x 4.30(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 1504
+                    }
+                ]
+            }
+        ],
+        "published": "09/18/2012",
+        "genreID": 5,
+        "description": "Immerse yourself in J.R.R. Tolkien's epic masterworks The Hobbit and the three volumes of The Lord of the Rings (The Fellowship of the Ring, The Two Towers, and The Return of the King) with this stunning four-volume, deluxe paperback boxed set."
+    },
+    {
+        "productID": 12,
+        "title": "The Silmarillion",
+        "authorID": 6,
+        "img": "silmarillion.jpg",
+        "formats": 
+        [
+            {
+                "type": 1,
+                "price": 15.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.50(w) x 8.20(h) x 1.00(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 384
+                    }
+                ]
+            },
+            {
+                "type": 2,
+                "price": 30.00,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.50(w) x 8.25(h) x 1.12(d)"
+                    },
+                    {
+                       "name": "Page Count",
+                        "value": 384
+                    }
+                ]
+            }
+        ],
+        "published": "09/18/2012",
+        "genreID": 5,
+        "description": "Immerse yourself in J.R.R. Tolkien's epic masterworks The Hobbit and the three volumes of The Lord of the Rings (The Fellowship of the Ring, The Two Towers, and The Return of the King) with this stunning four-volume, deluxe paperback boxed set."
+    },
+    {
+        "productID": 13,
+        "title": "Dune - Deluxe Edition",
+        "authorID": 7,
+        "img": "dune-exclusive.jpg",
+        "formats": 
+        [
+            {
+                "type": 2,
+                "price": 32.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.20(w) x 9.00(h) x 2.30(d)"
+                    },
+                    {
+                       "name": "Page Count",
+                        "value": 688
+                    }
+                ]
+            }
+        ],
+        "published": "10/04/2022",
+        "genreID": 1,
+        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for..."
+    },
+    {
+        "productID": 14,
+        "title": "Dune Messiah",
+        "authorID": 7,
+        "img": "dune-messiah.jpg",
+        "formats": 
+        [
+            {
+                "type": 1,
+                "price": 19.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.60(w) x 8.30(h) x 0.90(d)"
+                    },
+                    {
+                       "name": "Page Count",
+                        "value": 304
+                    }
+                ]
+            },
+            {
+                "type": 4,
+                "price": 9.99,
+                "details":
+                [
+                    {
+                        "name": "File size",
+                        "value": "1 MB"
+                    },
+                    {
+                       "name": "Page Count",
+                        "value": 336
+                    }
+                ]
+            },
+            {
+                "type": 3,
+                "price": 5.99,
+                "details":
+                [
+                    {
+                        "name": "File size",
+                        "value": "3 MB"
+                    },
+                    {
+                       "name": "Listening leangth",
+                        "value": "8 hours, 58 minutes"
+                    }
+                ]
+            }
+        ],
+        "published": "09/04/2007",
+        "genreID": 1,
+        "description": "Dune Messiah continues the story of Paul Atreides, better known—and feared—as the man christened Muad’Dib. As Emperor of the known universe, he possesses more power than a single man was ever meant to wield. Worshipped as a religious icon by the fanatical Fremen, Paul faces the enmity of the political houses he displaced when he assumed the throne—and a conspiracy conducted within his own sphere of influence."
+    },
+    {
+        "productID": 15,
+        "title": "The Magic of Reality",
+        "authorID": 1,
+        "img": "magicOfReality.jpg",
+        "formats": 
+        [
+            {
+                "type": 1,
+                "price": 15.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.60(w) x 8.30(h) x 0.90(d)"
+                    },
+                    {
+                       "name": "Page Count",
+                        "value":  267
+                    }
+                ]
+            },
+            {
+                "type": 4,
+                "price": 13.99,
+                "details":
+                [
+                    {
+                        "name": "File size",
+                        "value": "31 MB"
+                    },
+                    {
+                       "name": "Page Count",
+                        "value":  	272
+                    }
+                ]
+            },
+            {
+                "type": 3,
+                "price": 16.99,
+                "details":
+                [
+                    {
+                        "name": "File size",
+                        "value": "3 MB"
+                    },
+                    {
+                       "name": "Listening leangth",
+                        "value": "8 hours, 58 minutes"
+                    }
+                ]
+            }
+        ],
+        "published": "10/04/2011",
+        "genreID": 1,
+        "description": "Richard Dawkins, the world's most famous evolutionary biologist, presents a gorgeously lucid, science book examining some of the nature's most fundamental questions both from a mythical and scientific perspective."
+    },
+    {
+        "productID": 16,
+        "title": "A Dance With Dragons",
+        "authorID": 5,
+        "img": "danceWithDragons.jpg",
+        "formats": 
+        [
+            {
+            "type": 2,
+            "price": 32.49,
+            "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "6.50(w) x 9.62(h) x 1.60(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 584
+                    }
+                ]
+            },
+            {
+                "type": 1,
+                "price": 15.99,
+                "details":
+                [
+                    {
+                        "name": "Product dimensions",
+                        "value": "5.80(w) x 8.90(h) x 1.40(d)"
+                    },
+                    {
+                        "name": "Page Count",
+                        "value": 584
+                    }
+                ]
+            }
+        ],
+        "published": "10/29/2013",
+        "genreID": 5,
+        "description": "In the aftermath of a colossal battle, the future of the Seven Kingdoms hangs in the balance—beset by newly emerging threats from every direction. In the east, Daenerys Targaryen, the last scion of House Targaryen, rules with her three dragons as queen of a city built on dust and death. But Daenerys has thousands of enemies, and many have set out to find her. As they gather, one young man embarks upon his own quest for the queen, with an entirely different goal in mind."
+    }
+]

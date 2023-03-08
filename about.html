@@ -34,21 +34,8 @@
     </header>
     <!-- End Of Page Header -->
     <span id="recomended"></span>
-    <section class="section p-4" id="pocetna">
-        <h6 class="section-title text-center mt-5">Our Archive Catalogue</h6>
-        <h6 class="section-subtitle text-center mb-5 pb-3">Here you will find every title we have available to check-out at our location, it will also give you an opportunity to find a new title you might be interested in. Or if you're feeling adventurous, you can let us pick for you</h6>
-    </section>
-    <section id="nb-section-bg" class="section p-0">
-       <div class="nb-row-width mx-auto">
-        <form action="getphp.php" class="d-flex justify-content-end align-items-center nb-flex-column" id="filter-form">
-            <select name="filter-genres" class="nb-form-select" id="ddlGenres"></select>
-            <select name="filter-authors" class="nb-form-select" id="ddlAuthors"></select>
-            <select name="filter-types" class="nb-form-select" id="ddlTypes"></select>
-            <input type="button" value="Pick for Me" class="nb-form-select" id="btnRandomBook"/>
-            <input type="button" value="Filter" class="nb-form-select" id="filterBtn"/>
-        </form>
-       </div>
-    </section>
+    
+  
     <!-- Movie Section -->
     <section  id="service" class="section pt-0">
         
@@ -56,7 +43,33 @@
     <!-- End OF Movie Section -->
 
     <!-- About Section -->
-    
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <h6 class="section-title mb-0">About the Club</h6>
+                    <p>This site's purpose is to catalogue our archive for the convenience of our readers, so that they can access our resources without having to come in person.
+                        </p>
+                    <p>Subscribe to our newsletter to be notified of new additions to the library.</p>
+                </div>
+                <div class="col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="section-title">Nikola Bkic 70/21</h6>
+                            <p class="mb-4">Nikola Bkic is our first founding member, and is still a leading member, infact he is the only member and really hopes that you join so that he doesn't have to be alone anymore. So what are you wating for!? Fill out the form at the bottom of the page and we will send you an invite for our next group watching seasion.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <img src="assets/imgs/about.jpg" alt="about-club" class="w-100 mt-3 shadow-sm">
+                </div>
+                <div class="col-md-6 pr-md-5 mb-4 mb-md-0">
+                    <img src="assets/imgs/me.jpg" alt="me" class="nb-custom-width shadow-sm mt-3 ml-4">
+                </div>
+            </div>              
+        </div>
+    </section>
     <!-- End OF About Section -->
 
     <!-- Portfolio Section -->
@@ -77,7 +90,7 @@
     <!-- End of Testmonial Section -->
 
     <!-- Movie Card Modal-->
-    <div id="modal" class="modal" tabindex="-1" role="dialog">
+    <!-- <div id="modal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-scrollabl" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -94,7 +107,7 @@
           </div>
         </div>
       </div>
-    
+     -->
     <!-- Contact Section -->
     <section id="contact" class="section has-img-bg pb-0">
         <div class="container">

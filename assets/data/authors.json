@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Richard Dawkins"
+    },
+    {
+        "id": 2,
+        "name": "Dan Brown"
+    },
+    {
+        "id": 3,
+        "name": "J. K. Rowling"
+    },
+    {
+        "id": 4,
+        "name": "Athur Conan Doyle"
+    },
+    {
+        "id": 5,
+        "name": "George R. R. Martin"
+    },
+    {
+        "id": 6,
+        "name": "J. R. R. Tolkien"
+    },
+    {
+        "id": 7,
+        "name": "Frank Herbert"
+    }
+]

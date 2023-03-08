@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "name": "Paperback"
+    },
+    {
+        "id": 2,
+        "name": "Hardcover"
+    },
+    {
+        "id": 3,
+        "name": "Audiobook"
+    },
+    {
+        "id": 4,
+        "name": "Ebook"
+    }
+]

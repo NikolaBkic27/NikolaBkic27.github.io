@@ -1,20 +1,17 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
-if(window.location.href == "https://nikolabkic27.github.io/" || window.location.href == "https://nikolabkic27.github.io/index.html"){
-    console.log(window.location.href);
-}
 let navigationLocation = document.querySelector("#nb-navigation");
 let navigationDefault = `<div class="container">
 <a class="navbar-brand" href="#">
-    <h1 class="title nb-title navbar-fixed-top.scrolled">Movie<span class="nb-span">Buffs</span></h1>  
+    <h1 class="title nb-title navbar-fixed-top.scrolled">Book<span class="nb-span">Case</span></h1>  
 </a>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">`;
-let navigationList = ["recomended", "about", "events", "contact"];
-let navigationText = ["Redomendations", "About Us", "Upcoming Events", "Contact"]
+let navigationList = ["index.html", "about.html"];
+let navigationText = ["Archive", "About Us"]
 
 for(let i in navigationList){
     navigationDefault += `<li class="nav-item">
-    <a class="nav-link" href="#${navigationList[i]}">${navigationText[i]}</a>
+    <a class="nav-link" href="${navigationList[i]}">${navigationText[i]}</a>
 </li>`
 }
 navigationDefault += `<li class="nav-item">
@@ -24,180 +21,152 @@ navigationDefault += `<li class="nav-item">
 </div>
 </div>`
 navigationLocation.innerHTML = navigationDefault
-
-let sectionLocation = document.querySelector("#service");//lokacija filmova
-    //Start of Pre-filter content
-let movieText = [`Legendary marshal Wyatt Earp, now a weary gunfighter, joins his brothers Morgan and Virgil to pursue their collective fortune in the thriving mining town of Tombstone. But Earp is forced to don a badge again and get help from 				
-his notorious pal Doc Holliday when a gang of renegade brigands and rustlers begins terrorizing the town.`, `During its return to the earth, commercial spaceship Nostromo intercepts a distress signal from a distant planet.
-When a three-member team of the crew discovers a chamber containing thousands of eggs on the planet, a creature inside one of the eggs attacks an explorer. The entire crew is unaware of the impending nightmare set to descend upon them when 
-the alien parasite planted inside its unfortunate host is birthed.`, `Bounty hunters seek shelter from a raging blizzard and get caught up in a plot of betrayal and deception.`, 
-`Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When 
-organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps 
-in to take care of the would-be killers, launching a campaign of bloody revenge.`, `While the Civil War rages between the Union and the Confederacy, three men a quiet loner, a 
-ruthless hit man and a Mexican bandit comb the American Southwest in search of a strongbox containing $200,000 in 
-stolen gold.`, `Eight-year-old Kevin McCallister makes the most of the situation after his family unwittingly leaves him 
-behind when they go on Christmas vacation. But when a pair of bungling burglars set their sights on Kevin's house, the 
-plucky kid stands ready to defend his territory. By planting booby traps galore, adorably mischievous Kevin stands his 
-ground as his frantic mother attempts to race home before Christmas Day`, `Truman Burbank is the star of "The Truman Show", a 24-hour-a-day "reality" TV show that broadcasts every 
-aspect of his life -- live and in color -- without his knowledge. His entire life has been an unending soap opera for 
-consumption by the rest of the world. And everyone he knows -- including his wife and his best friend -- is really an 
-actor, paid to be part of his life.`, ` A biologist signs up for a dangerous, secret expedition into a mysterious zone where the laws of nature 
-don't apply.`, `The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood 
-gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.
-`, `King Arthur, accompanied by his squire, recruits his Knights of the Round Table, including Sir Bedevere the 
-Wise, Sir Lancelot the Brave, Sir Robin the Not-Quite-So-Brave-As-Sir-Lancelot and Sir Galahad the Pure. On the way, 
-Arthur battles the Black Knight who, despite having had all his limbs chopped off, insists he can still fight. They 
-reach Camelot, but Arthur decides not to enter, as "it is a silly place".`, `Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried 
-secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find 
-Rick Deckard, a former LAPD blade runner who has been missing for 30 years.` , `A rare mutation has occurred within the vampire community - The Reaper. A vampire so consumed with an insatiable 
-bloodlust that they prey on vampires as well as humans, transforming victims who are unlucky enough to survive into 
-Reapers themselves. Blade is asked by the Vampire Nation for his help in preventing a nightmare plague that would wipe 
-out both humans and vampires.`, `NYPD cop John McClane's plan to reconcile with his estranged wife is thrown for a serious loop when, minutes 
-after he arrives at her office, the entire building is overtaken by a group of terrorists. With little help from the 
-LAPD, wisecracking McClane sets out to single-handedly rescue the hostages and bring the bad guys down.`, `Scientists in the Antarctic are confronted by a shape-shifting alien that assumes the appearance of the 
-people it kills.`, `A pragmatic U.S. Marine observes the dehumanizing effects the U.S.-Vietnam War has on his fellow 
-recruits from their brutal boot camp training to the bloody street fighting in Hue.`, `When three friends finally come to after a raucous night of bachelor-party revelry, they find a baby in 
-the closet and a tiger in the bathroom. But they can't seem to locate their best friend, Doug who's supposed to be 
-tying the knot. Launching a frantic search for Doug, the trio perseveres through a nasty hangover to try to make it to 
-the church on time.`, `Jeffrey "The Dude" Lebowski, a Los Angeles slacker who only wants to bowl and drink White Russians, 
-is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange 
-series of events involving nihilists, film producers, ferrets, errant toes, and large sums of money.` , `When an evil doctor finds out Uncle Fester has been missing for 25 years, he introduces a fake Fester 
-in an attempt to get the Addams family's money. Wednesday has some doubts about the new uncle Fester, but the fake uncle 
-adapts very well to the strange family.`]
-
-let movieGenres = ["story", "horror", "story", "story", "action", "comedy", "comedy", "horror", "story", "comedy", 
-"action", "action", "action", "horror", "action", "comedy", "comedy", "comedy"]
-
-//console.log(movieGenres.length);
-
-let movieTitles = ["Tombstone", "Alien (1979)", "Hateful Eight", "The God Father", "The Good, Bad and the Ugly", "Home Alone", "Truman Show", "Annihilation", "Goodfellas", 
-"Monthy Python: The Holy Grail", "Bladerunner 2049", "Blade (1998)", "Die Hard", "The Thing", "Full Metal Jacket", "The Hangover", "The Big Lebowski", "The Addams Family"];
-
-//console.log(movieTitles.length);
-
-let moviePosters = ["tombstone-poster", "alien-poster", "hateful-eight-poster", "godfather-poster", "good-bad-ugly-poster", "home-alone-poster", "truman-show-poster", 
-"annihilation-poster", "goodfellas-poster", "holy-grail-poster", "bladerunner-poster", "blade-poster", "die-hard-poster", "the-thing-poster", "full-metal-jacket-poster", 
-"hangover-poster", "big-lebowski-poster", "addams-family-poster"];
-
-let movieList = `<div class="container-fluid m-0 mx-auto">
-                    <div class="row nb-row-width mx-auto mt-3 mb-3">`;
-
-for(let i in movieTitles){
-        movieList += `<div class="col-xl-2 col-lg-3 col-md-4 col-12">
-                        <div class="card">
-                            <img src="assets/imgs/${moviePosters[i]}.jpg" class="card-img-top" alt="${moviePosters[i]}"/>
-                            <div class="card-body">
-                                <h5 class="card-title">${movieTitles[i]}</h5>
-                                <p class="nb-visibility-hidden">${movieText[i]}</p>
-                                <button type="button" id="${i}"class="btn btn-primary nb-get-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
-                            </div>
-                        </div>
-                    </div>`
+if(window.location.href == "https://nikolabkic27.github.io/" || window.location.href == "https://nikolabkic27.github.io/index.html"){
+    
+window.onload= function(){
+    ajaxCallback('authors.json', function(rez){
+        IntoLS(rez, 'authors');
+    })
+    ajaxCallback('books.json', function(rez){
+        IntoLS(rez, 'books')
+    })
+    ajaxCallback('genre.json', function(rez){
+        IntoLS(rez, 'genres')
+    })
+    ajaxCallback('types.json', function(rez){
+        IntoLS(rez, 'types')
+    })
+    ajaxCallback('books.json', function(rez){
+        showBooks(rez);
+    })
+    if(window.location.href != undefined){
+        console.log(window.location.href);
+    }
 }
-movieList +=`</div></div>`;
-sectionLocation.innerHTML = movieList;
-modalContent()
-//End of Pre-filter content
+// showBooks(retrieveFromLS('books'))
 
-//Osnovni ddlGenres
+
+//DDL CREATION
 let ddlGenres = document.querySelector("#ddlGenres");
-let opt0 = document.createElement("option");
-opt0.setAttribute("value", "0");
-let opt0Text = document.createTextNode("Choose Genre");
-opt0.appendChild(opt0Text);
-ddlGenres.appendChild(opt0);
-
-//Dinamicki ispis ddl-a
-let uniqueGenres = ["horror", "story", "comedy", "action"];
-for(let i in uniqueGenres){
-    let option = document.createElement("option");
-    option.setAttribute("value", uniqueGenres[i]);
-    let optionText = document.createTextNode(`${uniqueGenres[i].substring(0,1).toUpperCase()}${uniqueGenres[i].substring(1,(uniqueGenres[i].length)+1)}`)
-    option.appendChild(optionText);
-    ddlGenres.appendChild(option);
-}
-//Dodatak Random("Pick for me") opcije
-let optRand = document.createElement("option");
-optRand.setAttribute("value", "random");
-let optRandText = document.createTextNode("Pick for me");
-optRand.appendChild(optRandText);
-ddlGenres.appendChild(optRand);
-
-
+let option0Genres = "Choose Genre";
+ajaxCallback("genre.json", function(genresArray){
+    createDDlOptions(ddlGenres, option0Genres, genresArray);
+})
+let ddlAuthors = document.querySelector("#ddlAuthors");
+let option0Authors = "Choose Author";
+ajaxCallback("authors.json", function(authorsArray){
+    createDDlOptions(ddlAuthors, option0Authors, authorsArray);
+})
+let ddlTypes = document.querySelector("#ddlTypes");
+let option0Types = "Choose Type";
+ajaxCallback("types.json", function(typesArray){
+    createDDlOptions(ddlTypes, option0Types, typesArray);
+})
+//END OF DDL CREATION
 
 //Start of filtering content
 
 let btnFilter = document.querySelector("#filterBtn");
-filterBtn.addEventListener("click", function(){
-    // let newMovieList = []
-    // let newMoviePosters = []
-    let selectedGenre = ddlGenres.options[ddlGenres.selectedIndex].value;
-    console.log(selectedGenre);
-    movieList = `<div class="container-fluid m-0 mx-auto">
-                    <div class="row nb-row-width mx-auto mt-3 mb-3">`;
-    //START OF DEFAULT
-    if(selectedGenre == "0"){
-        for(let i in movieTitles){
-            movieList += `<div class="col-xl-2 col-lg-3 col-md-4 col-12">
-                            <div class="card">
-                                <img src="assets/imgs/${moviePosters[i]}.jpg" class="card-img-top" alt="${moviePosters[i]}"/>
-                                <div class="card-body">
-                                    <h5 class="card-title">${movieTitles[i]}</h5>
-                                    <p class = "nb-visibility-hidden">${movieText[i]}</p>
-                                    <button type="button" class="btn btn-primary nb-get-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
-                                </div>
-                            </div>
-                        </div>`
-    }
-    movieList +=`</div></div>`;
-    sectionLocation.innerHTML = movieList;
-    }
-//END OF DEFAULT
+let btnRandomBook = document.querySelector("#btnRandomBook");
 //START OF RANDOM
-    else if(selectedGenre == "random"){
-        let randomIndex = parseInt(Math.floor(Math.random()*(movieTitles.length)))//+1 je nepotrebno zbog toga sto indeksiranje pocinje od 0.
-        console.log(randomIndex);
-        movieList += `<div class="col-xl-2 col-lg-3 col-md-4 col-12">
-        <div class="card">
-            <img src="assets/imgs/${moviePosters[randomIndex]}.jpg" class="card-img-top" alt="${moviePosters[randomIndex]}"/>
-            <div class="card-body">
-                <h5 class="card-title">${movieTitles[randomIndex]}</h5>
-                <p class = "nb-visibility-hidden">${movieText[randomIndex]}</p>
-                <button type="button" class="btn btn-primary nb-get-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
-            </div>
-        </div>
-    </div`
-    movieList +=`</div></div>`;
-    sectionLocation.innerHTML = movieList;
-    }
-//END OF RANDOM
-//START OF FILTERING
-    else{
-        for(let i in movieTitles){
-            if(movieGenres[i] == selectedGenre){//Filterovanje po izabranoj zanri
-                console.log(5);
-                movieList += `<div class="col-xl-2 col-lg-3 col-md-4 col-12">
-                <div class="card">
-                    <img src="assets/imgs/${moviePosters[i]}.jpg" class="card-img-top" alt="${moviePosters[i]}"/>
-                    <div class="card-body">
-                        <h5 class="card-title">${movieTitles[i]}</h5>
-                        <p class = "nb-visibility-hidden">${movieText[i]}</p>
-                        <button type="button" class="btn btn-primary nb-get-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
-                    </div>
-                </div>
-            </div>`
-            }
+btnRandomBook.addEventListener("click", function(){
+    let booksArray = retrieveFromLS("books");
+    let randomIndex = parseInt(Math.floor(Math.random()*(booksArray.length)+1))
+    console.log(randomIndex);
+
+    for (let book of booksArray){
+        if (book.productID == randomIndex){
+            booksArray = [book];
+            console.log(booksArray);
         }
-        movieList +=`</div></div>`;
-    sectionLocation.innerHTML = movieList;
     }
-//END OF FILTERING
-modalContent()
+    showBooks(booksArray);
 })
+
+
+//END OF RANDOM
+function filterBooks(){
+    let selectedGenre = ddlGenres.options[ddlGenres.selectedIndex].value;
+    let selectedAuthor = ddlAuthors.options[ddlAuthors.selectedIndex].value;
+    let booksArray = retrieveFromLS("books");
+    // console.log(selectedGenre);
+    if(selectedGenre == "0" && selectedAuthor == "0"){
+        showBooks(booksArray);
+    }
+    else{
+        let filteredBooksArray = [];
+        if(selectedAuthor != "0"){
+            for(let book of booksArray){
+                if(book.authorID == parseInt(selectedAuthor)){
+                    filteredBooksArray.push(book);
+                }
+            }
+            booksArray = filteredBooksArray;
+        }
+        if(selectedGenre != "0"){
+            filteredBooksArray = [];
+            for(let book of booksArray){
+                if(book.genreID == parseInt(selectedGenre)){
+                    filteredBooksArray.push(book);
+                }
+            }
+            booksArray = filteredBooksArray;
+        }
+        showBooks(booksArray)
+    }
+}
+//DEFAULT
+filterBtn.addEventListener("click", function(){
+    let selectedGenre = ddlGenres.options[ddlGenres.selectedIndex].value;
+    let selectedAuthor = ddlAuthors.options[ddlAuthors.selectedIndex].value;
+    let selectedType = ddlTypes.options[ddlTypes.selectedIndex].value;
+    let booksArray = retrieveFromLS("books");
+    // console.log(selectedGenre);
+    if(selectedGenre == "0" && selectedAuthor == "0" && selectedType == "0"){
+        showBooks(booksArray);
+    }
+    else{
+        let filteredBooksArray = [];
+        if(selectedAuthor != "0"){
+            for(let book of booksArray){
+                if(book.authorID == parseInt(selectedAuthor)){
+                    filteredBooksArray.push(book);
+                }
+            }
+            booksArray = filteredBooksArray;
+        }
+        if(selectedGenre != "0"){
+            filteredBooksArray = [];
+            for(let book of booksArray){
+                if(book.genreID == parseInt(selectedGenre)){
+                    filteredBooksArray.push(book);
+                }
+            }
+            booksArray = filteredBooksArray;
+        }
+        if(selectedType != "0"){
+            filteredBooksArray = [];
+            for(let book of booksArray){
+                for(let format of book.formats){
+                    if(format.type == parseInt(selectedType)){
+                        book.formats = [format];
+                        filteredBooksArray.push(book);
+                        break;
+                    }
+                }
+            }
+            booksArray = filteredBooksArray;
+        }
+        showBooks(booksArray)
+    }
+})
+//END OF DEFAULT
 //End of filtering content
+}
+
 
 //Start of Timer
-let targetDate= new Date ("Dec 29, 2022 16:30:00").getTime();
+let targetDate= new Date ("Mar 20, 2023 16:30:00").getTime();
 setInterval(function() {
     let currentTime = new Date().getTime()
     let remainingTime = targetDate - currentTime;
@@ -344,6 +313,8 @@ infoBtn.addEventListener("click",function(){
         document.querySelector("#form-sucs").classList.add("nb-dispay-none")
     }
 });
+//END OF FORM VALIDATION
+
 //START OF JQUERY SECTION
 $(document).ready(function(){
     var scroll_pos = 0;
@@ -365,6 +336,72 @@ $("#modal").css("display", "none");
 })
 });
 //END OF JQUERY SECTION
+
+
+function showBooks(books){
+    console.log(books);
+    let sectionLocation = document.querySelector("#service");
+    let authors = retrieveFromLS('authors');
+    let genres = retrieveFromLS('genres');
+    let types = retrieveFromLS('types');
+    let bookList = `<div class="container-fluid m-0 mx-auto">
+    <div class="row nb-row-width mx-auto mt-3 mb-3">`;
+    for(let book of books){
+        bookList += `<div class="col-xl-2 col-lg-3 col-md-4 col-12">
+                        <div class="card">
+                            <img src="assets/imgs/${book.img}" class="card-img-top" alt="${book.title}"/>
+                            <div class="card-body">
+                                <h5 class="card-title">${book.title}</h5>
+                                <ul>`;
+        for(let type of types){
+            if(book.formats[0].type == type.id){
+                bookList += `<li>${type.name}</li>`;
+                break;
+            }
+        }                        
+        for(let author of authors){
+            if(author.id == book.authorID){
+                bookList += `<li>${author.name}</li>`;
+                break;
+            }
+        }
+        for(let genre of genres){
+            if(genre.id == book.genreID){
+                bookList += `<li>${genre.name}</li>`;
+                break;
+            }
+        }
+        bookList += `</ul>
+                    <p class="card-text">$${book.formats[0].price}</p>
+                    </div>
+                    <button type="button" id="${book.productID}"class="btn btn-primary nb-get-modal" data-bs-toggle="modal" data-bs-target="#exampleModal">Read More</button>
+                    </div>
+                    </div>`;
+    }
+    bookList += `</div></div>`;
+    sectionLocation.innerHTML = bookList;
+    modalContent();
+    // console.log(bookList);
+}
+
+
+function createDDlOptions(ddlID, textForOptionZero, optionsArray){
+    let opt0 = document.createElement("option");
+    opt0.setAttribute("value", "0");
+    let opt0Text = document.createTextNode(textForOptionZero);
+    opt0.appendChild(opt0Text);
+    ddlID.appendChild(opt0);
+    
+    for(let member of optionsArray){
+        let option = document.createElement("option");
+        option.setAttribute("value", `${member.id}`);
+        let optionText = document.createTextNode(`${member.name}`);
+        option.appendChild(optionText);
+        ddlID.appendChild(option);
+    }
+}
+
+
 function radioCheck (){
     let checkedValue = "";
     for(let i in genderArray){
@@ -383,6 +420,7 @@ function radioCheck (){
         return 1;
     }
 }
+
 
 function addressAndEmail (){
     if (email.value == "" && address.value == ""){
@@ -417,7 +455,6 @@ function addressAndEmail (){
 }
 
 
-
 function regexValidation(tag, regex, error){
     if(regex.test(tag.value)){
         tag.classList.remove("nb-input-mistake")
@@ -431,18 +468,132 @@ function regexValidation(tag, regex, error){
         return 0;
     }
 }
-function modalContent(){
+{/*
+    <div class="modal-dialog modal-dialog-scrollabl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" id = "close-modal-x"class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+              <button id="close-modal"type="button" class="btn btn-primary" data-dismiss="modal">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+ */}
+ function modalContent(){
     $(`.nb-get-modal`).click(function(e){
-        let movieText = $(this).prev().text();
-        let movieTitle = $(this).prev().prev().text();
-        console.log(movieText);
-        $(".modal-title").text(movieTitle)
-        $(".modal-body p").text(movieText);
+       let productID = $(this).attr('id');
+       ajaxCallback("books.json", function(booksArray){
+        ajaxCallback("types.json", function(typesArray){
+            modalDisplay(productID, typesArray, booksArray)
+        })
+       })
+       e.preventDefault()
+       $("#modal").slideDown("slow")
+    })
+    // $(`.nb-get-modal`).click(function(e){
+    //     let movieText = $(this).prev().text();
+    //     let movieTitle = $(this).prev().prev().text();
+    //     console.log(movieText);
+    //     $(".modal-title").text(movieTitle)
+    //     $(".modal-body p").text(movieText);
+    //     e.preventDefault()
+    //     $("#modal").slideDown("slow")
+    // })
+}
+   // let baseModal = document.querySelector("#modal");
+    // let modalHTML = `<div class="modal-dialog modal-dialog-scrollabl" role="document">
+    //                     <div class="modal-content">
+    //                         <div class="modal-header">`;
+function modalDisplay(productID, typesArray , booksArray, desiredFormat = 0){
+       let desiredArrayIndex;
+       let baseModal = document.querySelector("#modal");
+       let modalHTML = `<div class="modal-dialog modal-dialog-scrollabl" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">`;
+    for(let index in booksArray){
+        if(booksArray[index].productID == productID){
+            desiredArrayIndex = index;
+            break;
+        }
+    }
+    modalHTML += `<h5 class="modal-title">${booksArray[desiredArrayIndex].title}</h5>
+                    <button type="button" id = "close-modal-x"class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div> 
+                <div class="modal-body"><p>${booksArray[desiredArrayIndex].description}</p>`;
+   for(let type of typesArray){
+        if(booksArray[desiredArrayIndex].formats[desiredFormat].type == type.id){
+            modalHTML += `<h6>${type.name}</h6>`;
+            break;
+        }
+    } 
+    if(booksArray[desiredArrayIndex].formats.length != 0){
+        modalHTML += `<div class="modal-body"><ul id="modal-ul">`;
+        for(let detail of booksArray[desiredArrayIndex].formats[desiredFormat].details){
+            modalHTML += `<li>${detail.name}: ${detail.value}</li>`
+        }
+        modalHTML += `</ul></div>`
+    }
+    for(let formatIndex in booksArray[desiredArrayIndex].formats){
+        for(let type of typesArray){
+            if(booksArray[desiredArrayIndex].formats[formatIndex].type == type.id){
+                modalHTML += `<a href="javascript:void(0)" class="btn btn-info nb-type" id="${formatIndex}">${type.name}</a> `
+            }
+        }
+    }
+    modalHTML += `</div>
+    <div class="modal-footer">
+              <button id="close-modal"type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>`;
+    baseModal.innerHTML = modalHTML;
+    
+    //ADD BUTTON FUCTIONS
+    document.querySelector("#close-modal").addEventListener("click", function(e){
         e.preventDefault()
-        $("#modal").slideDown("slow")
+        $("#modal").css("display", "none");
+    })
+    document.querySelector("#close-modal-x").addEventListener("click", function(e){
+    e.preventDefault()
+    $("#modal").css("display", "none");
+    });
+    $('.nb-type').click(function(){
+        let indexOfDesiredFormat = $(this).attr("id");
+        modalDisplay(productID, typesArray , booksArray, indexOfDesiredFormat)
+    })
+    // let btnInfo = document.querySelectorAll(".nb-type");
+    // btnInfo.forEach(function(btn){
+    //     btn.addEventListener("click", function(){
+            
+    //         modalDisplay(productID, typesArray , booksArray)
+    //     })
+    // })
+    // console.log(productID);
+}
+function IntoLS(data, storageName){
+    localStorage.setItem(storageName, JSON.stringify(data));
+}
+function retrieveFromLS(name){
+    return JSON.parse(localStorage.getItem(name));
+}
+function ajaxCallback(file, doThis){
+    $.ajax({
+        url: "assets/data/" + file,
+        method: "get",
+        dataType: "json",
+        success: function(rezult){
+            doThis(rezult);
+        },
+        error: function(xhr){
+            console.log(xhr);
+        }
     })
 }
-
-
-
-

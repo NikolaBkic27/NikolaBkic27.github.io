@@ -1,4 +1,5 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
+console.log(window.location.href);
 let navigationLocation = document.querySelector("#nb-navigation");
 let navigationDefault = `<div class="container">
 <a class="navbar-brand" href="#">

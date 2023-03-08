@@ -1,7 +1,7 @@
 //https://www.free-css.com/free-css-templates/page282/leadmark
 let navigationLocation = document.querySelector("#nb-navigation");
 let navigationDefault = `<div class="container">
-<a class="navbar-brand" href="#">
+<a class="navbar-brand">
     <h1 class="title nb-title navbar-fixed-top.scrolled">Book<span class="nb-span">Case</span></h1>  
 </a>
 <div class="collapse navbar-collapse" id="navbarSupportedContent">

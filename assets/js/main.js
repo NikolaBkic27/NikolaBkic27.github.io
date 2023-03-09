@@ -120,10 +120,16 @@ filterBtn.addEventListener("click", function(){
     let selectedGenre = ddlGenres.options[ddlGenres.selectedIndex].value;
     let selectedAuthor = ddlAuthors.options[ddlAuthors.selectedIndex].value;
     let selectedType = ddlTypes.options[ddlTypes.selectedIndex].value;
+    let selectedSort = ddlSort.options[ddlSort.selectedIndex].value;
     let booksArray = retrieveFromLS("books");
     // console.log(selectedGenre);
     if(selectedGenre == "0" && selectedAuthor == "0" && selectedType == "0"){
-        showBooks(booksArray);
+        if(selectedSort == "0"){
+            showBooks(booksArray);
+        }
+        else{
+            showBooks(sortBooks(booksArray, selectedSort))
+        }
     }
     else{
         let filteredBooksArray = [];
@@ -157,7 +163,12 @@ filterBtn.addEventListener("click", function(){
             }
             booksArray = filteredBooksArray;
         }
-        showBooks(booksArray)
+        if(selectedSort == "0"){
+            showBooks(booksArray)
+        }
+        else{
+        showBooks(sortBooks(booksArray, selectedSort))
+        }
     }
 })
 //END OF DEFAULT
@@ -578,6 +589,7 @@ function modalDisplay(productID, typesArray , booksArray, desiredFormat = 0){
     // })
     // console.log(productID);
 }
+
 function IntoLS(data, storageName){
     localStorage.setItem(storageName, JSON.stringify(data));
 }
@@ -612,4 +624,42 @@ function ajaxCallback(file, doThis){
             alert(err_msg);
         }
     })
+}
+function sortBooks(books, desiredSort){
+    let sortedArray = [];
+    sortedArray = books.sort(function(a, b){
+        if (desiredSort == "Title A-Z"){
+            if(a.title > b.title){
+                return 1;
+            }
+            else if(a.title < b.title){
+                return -1;
+            }
+            else{
+                return 0;
+            }
+        }
+        if(desiredSort == "Title Z-A"){
+            if(a.title > b.title){
+                return -1;
+            }
+            else if(a.title < b.title){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+        if(desiredSort == "Price ASC"){
+            return parseFloat(a.formats[0].price) - parseFloat(b.formats[0].price);
+        }
+        if (desiredSort == "Price DESC"){
+            return parseFloat(b.formats[0].price) - parseFloat(a.formats[0].price);
+        }
+        if(desiredSort == "Author"){
+            return b.authorID - a.authorID;
+        }
+    }
+)
+return sortedArray;
 }

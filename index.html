@@ -41,6 +41,14 @@
     <section id="nb-section-bg" class="section p-0">
        <div class="nb-row-width mx-auto">
         <form action="getphp.php" class="d-flex justify-content-end align-items-center nb-flex-column" id="filter-form">
+            <select name="sort-books" class="nb-form-select" id="ddlSort">
+                <option value="0">Sort by</option>
+                <option value="Title A-Z">Title A-Z</option>
+                <option value="Title Z-A">Title Z-A</option>
+                <option value="Price ASC">Price ASC</option>
+                <option value="Price DESC">Price DESC</option>
+                <option value="Author">Author</option>
+            </select>
             <select name="filter-genres" class="nb-form-select" id="ddlGenres"></select>
             <select name="filter-authors" class="nb-form-select" id="ddlAuthors"></select>
             <select name="filter-types" class="nb-form-select" id="ddlTypes"></select>

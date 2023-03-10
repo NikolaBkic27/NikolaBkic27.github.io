@@ -604,7 +604,7 @@ function ajaxCallback(file, doThis){
         success: function(rezult){
             doThis(rezult);
         },
-        error: function(xhr){
+        error: function(jqXHR, exception){
             var err_msg = '';
             if (jqXHR.status === 0) {
             err_msg = 'Not connect.\n Verify Network.';
@@ -621,7 +621,8 @@ function ajaxCallback(file, doThis){
             } else {
             err_msg = 'Uncaught Error.\n' + jqXHR.responseText;
             }
-            alert(err_msg);
+            let writeError = document.querySelector("#ajax-error").innerHTML = err_msg;
+            writeError.classList.remove("nb-visibility-hidden")
         }
     })
 }
